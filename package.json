@@ -1,0 +1,36 @@
+{
+  "name": "postcss-pixels-to-em",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to convert all px units of measurements to em",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "pixels",
+    "em",
+    "relative"
+  ],
+  "author": "James Coleman <james.coleman@bugherd.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ojame/postcss-pixels-to-em.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ojame/postcss-pixels-to-em/issues"
+  },
+  "homepage": "https://github.com/ojame/postcss-pixels-to-em",
+  "dependencies": {
+    "postcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-mocha": "^2.1.2",
+    "lodash-node": "^3.10.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
+}
