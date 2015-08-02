@@ -13,7 +13,7 @@ var test = function (input, output, opts, done) {
 	});
 };
 
-describe('postcss-pixels-to-em', function () {
+describe('postcss-px-to-em', function () {
 
 	it('replaces pixel values', function(done) {
 		test('a{width: 200px;}', 'a{width: 12.5em;}', {}, done);

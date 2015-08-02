@@ -1,5 +1,5 @@
 {
-  "name": "postcss-pixels-to-em",
+  "name": "postcss-px-to-em",
   "version": "0.0.0",
   "description": "PostCSS plugin to convert all px measurements to em",
   "keywords": [
@@ -7,6 +7,7 @@
     "css",
     "postcss-plugin",
     "pixels",
+    "px",
     "em",
     "relative"
   ],
@@ -14,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ojame/postcss-pixels-to-em.git"
+    "url": "https://github.com/macropodhq/postcss-px-to-em.git"
   },
   "bugs": {
-    "url": "https://github.com/ojame/postcss-pixels-to-em/issues"
+    "url": "https://github.com/macropodhq/postcss-px-to-em/issues"
   },
-  "homepage": "https://github.com/ojame/postcss-pixels-to-em",
+  "homepage": "https://github.com/macropodhq/postcss-px-to-em",
   "dependencies": {
     "postcss": "^4.1.13"
   },

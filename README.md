@@ -1,4 +1,4 @@
-# PostCSS Pixels To em [![Build Status][ci-img]][ci]
+# PostCSS px To em [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin to convert all `px` measurements to `em`.
 
@@ -51,7 +51,7 @@ For [Bugherd], we needed to be able to scale our UIs to fit any zoom level on Mo
 Plug it into your PostCSS configuration.
 
 ```js
-postcss([ require('postcss-pixels-to-em') ])
+postcss([ require('postcss-px-to-em') ])
 ```
 
 See PostCSS docs for examples for your environment.

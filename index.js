@@ -10,7 +10,7 @@ function nonForcedNumericRegex(number) {
   return new RegExp(number + 'px(?!\\s*\\/\\*\\s*force\\s*\\*\\/)', 'g');
 }
 
-module.exports = postcss.plugin('postcss-pixels-to-em', function (opts) {
+module.exports = postcss.plugin('postcss-px-to-em', function (opts) {
   opts = extend({}, DEFAULTS, opts);
 
   var regex = /([\d\.]+)px(\s*\/\*\s*force\s*\*\/)?/g;
