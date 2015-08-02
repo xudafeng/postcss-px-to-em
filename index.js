@@ -1,27 +1,32 @@
 var postcss = require('postcss');
-var _ = require('lodash-node');
+var extend = require('lodash/object/extend');
+
+var DEFAULTS = {
+  base: 16,
+};
+
+function nonForcedNumericRegex(number) {
+  // finds pixel values not followed by `/* force */`
+  return new RegExp(number + 'px(?!\\s*\\/\\*\\s*force\\s*\\*\\/)', 'g');
+}
 
 module.exports = postcss.plugin('postcss-pixels-to-em', function (opts) {
-  var defaults = {
-    base: 16,
-  };
+  opts = extend({}, DEFAULTS, opts);
 
-  opts = _.extend({}, defaults, opts);
-
-  var regex = /((\d+).*?)(px)/g;
+  var regex = /([\d\.]+)px(\s*\/\*\s*force\s*\*\/)?/g;
 
   var convert = function(context) {
-    var contextMinified = context.replace(/\s/g, '');
     var replaceable = context.match(regex);
 
-    if (replaceable && contextMinified.indexOf('/*force*/') === -1) {
+    if (replaceable) {
       replaceable.forEach(function(value) {
         var matches = regex.exec(value);
         regex.lastIndex = 0;
 
-        var relative = matches[1] / opts.base;
-
-        context = context.replace(value, relative + 'em');
+        // if the value is not forced to be pixels, let's replace any matching
+        if (!matches[2]) {
+          context = context.replace(nonForcedNumericRegex(matches[1]), matches[1] / opts.base + 'em');
+        }
       });
     }
 

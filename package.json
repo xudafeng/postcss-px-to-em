@@ -1,7 +1,7 @@
 {
   "name": "postcss-pixels-to-em",
   "version": "0.0.0",
-  "description": "PostCSS plugin to convert all px units of measurements to em",
+  "description": "PostCSS plugin to convert all px measurements to em",
   "keywords": [
     "postcss",
     "css",
@@ -28,7 +28,7 @@
     "gulp": "^3.9.0",
     "gulp-eslint": "^0.14.0",
     "gulp-mocha": "^2.1.2",
-    "lodash-node": "^3.10.0"
+    "lodash": "^3.10.0"
   },
   "scripts": {
     "test": "gulp"
