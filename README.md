@@ -51,7 +51,12 @@ For [Bugherd], we needed to be able to scale our UIs to fit any zoom level on Mo
 Plug it into your PostCSS configuration.
 
 ```js
-postcss([ require('postcss-px-to-em') ])
+var options = {
+  base: 16, // Base font size; 16px by default
+};
+
+// Options may be supplied as the first argument, but are not required.
+postcss([require('postcss-px-to-em')(options)])
 ```
 
 See PostCSS docs for examples for your environment.
