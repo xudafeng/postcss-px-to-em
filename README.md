@@ -63,5 +63,5 @@ See PostCSS docs for examples for your environment.
 
 [Bugherd]: https://macropod.com/bugherd
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/ojame/postcss-pixels-to-em.svg
-[ci]:      https://travis-ci.org/ojame/postcss-pixels-to-em
+[ci-img]:  https://travis-ci.org/macropodhq/postcss-px-to-em.svg
+[ci]:      https://travis-ci.org/macropodhq/postcss-px-to-em
