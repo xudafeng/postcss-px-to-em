@@ -1,6 +1,6 @@
 {
-  "name": "postcss-px-to-em",
-  "version": "1.0.1",
+  "name": "postcss-px-2-em",
+  "version": "1.0.0",
   "description": "PostCSS plugin to convert all px measurements to em",
   "keywords": [
     "postcss",
@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/macropodhq/postcss-px-to-em",
   "dependencies": {
-    "lodash": "^3.10.0",
-    "postcss": "^4.1.13"
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^0.14.0",
-    "gulp-mocha": "^2.1.2"
+    "gulp-mocha": "^2.1.2",
+    "postcss": "^5.0.14"
   },
   "scripts": {
     "test": "gulp"
